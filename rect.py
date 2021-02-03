@@ -1,0 +1,8 @@
+print("Area of Rectangle")
+w=(int(input("enter width")))
+l=(int(input("enter length")))
+print(w*l)
+print("Area of Triangle")
+b=(int(input("enter base")))
+h=(int(input("enter height")))
+print((b*h)/2)
