@@ -1,12 +1,14 @@
-z=int(input("\nEnter the limit\t"))
-a=0
-b=1
-c=x=0
-print(a)
-print(b)
-while(x<(z-2)):
-    c=a+b
-    a=b
-    b=c
-    print(c)
-    x+=1
+def fib(n):
+    if (n<=1):
+        return n
+    else:
+        return (fib(n-1)+fib(n-2))
+
+n=int(input("\nEnter the limit : "))
+
+if(n<=0):
+    print("\nenter positive number")
+else:
+    print("\nFibnoacci series : ")
+    for i in range(n):
+        print(fib(i))

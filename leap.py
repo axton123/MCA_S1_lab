@@ -1,10 +1,12 @@
-a=int(input("\nEnter the year\t"))
-if(a%4==0 & a%400==0):
-    if(a%100==0):
-        print("\nLeap year")
-    elif(a%100!=0):
-        print("\nLeap Year")
-    else:
-        print("\nNot LY")
+year = int(input("\Enter the year : "))
+
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("{0} is a leap year".format(year))
+       else:
+           print("{0} is not a leap year".format(year))
+   else:
+       print("{0} is a leap year".format(year))
 else:
-    print("\nNot Leap Year")
+   print("{0} is not a leap year".format(year))
